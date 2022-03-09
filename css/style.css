@@ -1,0 +1,262 @@
+/* ESTILOS GENERALES*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    color: #595260;
+    background-color: #fbf4f9;
+}
+
+
+/* INDEX */
+
+
+/*BARRA DE NAV*/
+
+.header {
+    background-color: #fbf4f9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/pexels-neosiam-592392.jpg");
+}
+
+.nav-item {
+    font-size: 15px;
+    margin: 0px 20px;
+}
+
+.nav-link:hover {
+    color: #91a5c7 !important;
+}
+
+.link {
+    text-decoration: none;
+    color: #595260;
+}
+
+.link:hover {
+    color: #FFE2E2;
+}
+
+.imgIndex {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgIndex img {
+    width: 50%;
+    object-fit: cover;
+    margin-left: 8px;
+}
+
+.volver {
+    text-align: right;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #B9CCED;
+    padding: 2rem 1rem;
+}
+
+i {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.row {
+    justify-content: center;
+}
+
+.iconos {
+    margin-top: 10px;
+}
+
+.derechos {
+    padding-top: 10px;
+    border-top: solid 1px black;
+}
+
+.derechos h4 {
+    font-size: small;
+    text-align: center;
+}
+
+.boton {
+    border-color: #B9CCED;
+    background-color: #B9CCED;
+    border-radius: 0.2rem;
+    font-size: 1 rem;
+    margin-bottom: 10px;
+    transition: ease 3s;
+    font-family: 'Birthstone', cursive;
+}
+
+
+/*  PRODUCTOS*/
+
+.buscar {
+    position: absolute;
+    width: 100px;
+    left: 85%;
+    top: 4%;
+}
+
+.box {
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input.src {
+    padding: 3px 7px 3px 30px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 17px;
+    color: #595260;
+    margin: 5px 9px;
+    background: #fff url("https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png") no-repeat 9px center;
+    width: 96px;
+    transition: all .5s;
+}
+
+input.src:hover {
+    width: 220px;
+    background-color: #fff;
+    box-shadow: 0 0 5px;
+}
+
+.volver {
+    text-decoration: none;
+    text-align: right;
+}
+
+.sectionProductos {
+    display: grid;
+}
+
+.articleProductos h5 {
+    font-weight: 900;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.articleProductos img {
+    margin: 10px;
+}
+
+#grid {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 2em;
+    margin: 2em;
+}
+
+.articleProductos {
+    padding: 1px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    transition: ease .5s;
+}
+
+.articleProductos:hover {
+    border: transparent solid 1px;
+    transform: scale(1.05);
+}
+
+.carrito {
+    background-color: #B9CCED;
+    border-radius: 3px;
+    border: solid #B9CCED;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    /*INDEX*/
+    .nav-item {
+        font-size: 20px;
+    }
+    .imgIndex {
+        height: 430px;
+    }
+    .divIndex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .imgIndex img {
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+    .boton {
+        font-size: 30px;
+    }
+    /*PRODUCTOS*/
+    #grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*FOOTER*/
+    .derechos h4 {
+        display: flex;
+        justify-content: center;
+    }
+    .derechos h4 {
+        font-size: medium;
+    }
+}
+
+@media (min-width: 1024px) {
+    /*  INDEX */
+    .header {
+        height: 150px;
+    }
+    .nav-item {
+        font-size: 25px;
+    }
+    /*CONTENIDO INDEX*/
+    .imgIndex {
+        height: 515px;
+    }
+    .imgIndex img {
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+    .boton {
+        font-size: 30px;
+    }
+    /* PRODUCTOS*/
+    #grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /*FOOTER*/
+    .derechos h4 {
+        display: flex;
+        justify-content: center;
+    }
+    .derechos h4 {
+        font-size: large;
+    }
+}
