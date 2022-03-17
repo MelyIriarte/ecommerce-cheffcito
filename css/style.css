@@ -98,7 +98,7 @@ i {
 .boton {
     border-color: #B9CCED;
     background-color: #B9CCED;
-    border-radius: 0.2rem;
+    border-radius: 0.6rem;
     margin-bottom: 10px;
     font-family: 'Birthstone', cursive;
 }
@@ -151,7 +151,7 @@ input.src:hover {
 .articleProductos h5 {
     font-weight: 900;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 25px;
 }
 
 .articleProductos img {
@@ -262,11 +262,11 @@ ul {
         margin-top: 20px;
     }
     .boton {
-        font-size: 30px;
+        font-size: 28px;
     }
     /*PRODUCTOS*/
     #grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     /*FOOTER*/
     .derechos h4 {
@@ -297,11 +297,11 @@ ul {
         margin-top: 20px;
     }
     .boton {
-        font-size: 30px;
+        font-size: 28px;
     }
     /* PRODUCTOS*/
     #grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     /*FOOTER*/
     .derechos h4 {

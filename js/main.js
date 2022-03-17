@@ -20,24 +20,24 @@ document.addEventListener('DOMContentLoaded', () => {
     //PRODUCTOS
     const listadoProductos = [{
             id: 1,
-            imagen: "../img/brownie-min.png",
-            nombre: "brownie",
+            imagen: "img/brownie-min.png",
+            nombre: "Brownie",
             descripcion: "Base de nuestro brownie de chocolate con una capa de dulce de leche y copos de merengue Italiano.",
             precio: 200,
             categoria: "tortas"
         },
         {
             id: 2,
-            imagen: "../img/chescake-min.png",
-            nombre: "cheescake",
+            imagen: "img/chescake-min.png",
+            nombre: "Cheescake",
             descripcion: " Base de galletitas trituradas con una crema de queso, terminada con una deliciosa jalea de frutos rojos.",
             precio: 3000,
             categoria: "tortas"
         },
         {
             id: 3,
-            imagen: "../img/rogel-min.png",
-            nombre: "rogel",
+            imagen: "img/rogel-min.png",
+            nombre: "Rogel",
             descripcion: " Masas fina de galeta muy crocante intercaladas con dulce de leche terminada con pico altos de meregue Italiano.",
             precio: 2200,
             categoria: "tortas"
@@ -45,92 +45,100 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 4,
-            imagen: "../img/lemonpie-min.png",
-            nombre: "lemonpie",
+            imagen: "img/lemonpie-min.png",
+            nombre: "Lemonpie",
             descripcion: "Base de una masa fina  rellena de una crema de limon , cubierta con unos picos de merengue italiano",
             precio: 2500,
             categoria: "tortas"
         },
         {
             id: 5,
-            imagen: "../img/scon-min.png",
-            nombre: "scon",
+            imagen: "img/scon-min.png",
+            nombre: "Scon",
             descripcion: "Panecillos de queso",
             precio: 600,
             categoria: "panaderia"
         },
         {
             id: 6,
-            imagen: "../img/alfajorcito-min.png",
-            nombre: "alfajores de maicena",
+            imagen: "img/alfajorcito-min.png",
+            nombre: "Alfajores de maicena",
             descripcion: " Masa quebrada, super suave rellena con dulce de leche, con coco al rededor.",
             precio: 600,
             categoria: "panaderia"
         },
         {
             id: 7,
-            imagen: "../img/budin-min.png",
-            nombre: "budin de zanahoria",
+            imagen: "img/budin-min.png",
+            nombre: "Budin de zanahoria",
             descripcion: "Budin de zanahoria con glaseado y decoracion de zanahoria en pasta ballina.",
             precio: 1000,
             categoria: "panaderia"
         }, {
             id: 8,
-            imagen: "",
-            nombre: "pandulce de chips",
+            imagen: "img/pandulceChips .png",
+            nombre: "Pandulce de chips",
             descripcion: "Nuestros pandulces estan elaborados un una masa exquisita y mega esponjosa, con gran cantidad de chips,cubiertos con un glaseado de limon ",
             precio: 1200,
             categoria: "productos festivos"
         }, {
             id: 9,
-            imagen: "../img/pandulce.png",
-            nombre: "pandulce de frutos secos",
+            imagen: "img/pandulce.png",
+            nombre: "Pandulce de frutos secos",
             descripcion: "Nuestros pandulces estan elaborados un una masa exquisita y mega esponjosa, con gran cantidad de frutos secos ,cubiertos con frutos secos caramelizados ",
             precio: 1500,
             categoria: "productos festivos"
         }, {
             id: 10,
-            imagen: "",
-            nombre: "pandulce clasico ",
+            imagen: "img/pandulce.png",
+            nombre: "Pandulce clasico ",
             descripcion: "Nuestros pandulces estan elaborados un una masa exquisita y mega esponjosa, con gran cantidas de frutas seca y abrillantadas ,cubiertos con frutos caramelizados ",
             precio: 1200,
             categoria: "productos festivos"
         }, {
             id: 11,
-            imagen: "",
-            nombre: "rosca de pascuas",
+            imagen: "img/roscaClasica.png",
+            nombre: "Rosca de pascuas",
             descripcion: "Rosca clasica decorada con crema pastelera, cerezas e higos",
             precio: 1100,
             categoria: "productos festivos"
         }, {
             id: 12,
-            imagen: "../img/brownie-min.png",
-            nombre: "rosca trenzada",
+            imagen: "img/trenzada.png",
+            nombre: "Rosca trenzada",
             descripcion: "La masa clasica de la rosca trenzada con crema pastelera y trozos de chocolate ",
             precio: 1100,
             categoria: "productos festivos"
         }, {
             id: 13,
-            imagen: "",
-            nombre: " budin de nuez",
+            imagen: "img/budines.png",
+            nombre: "Budin de nuez",
             descripcion: "Budin de nuez, decorado con un glaseado de limon ",
             precio: 1050,
             categoria: "panaderia"
         }, {
             id: 14,
-            imagen: "",
-            nombre: "budin de chips",
+            imagen: "img/budines.png",
+            nombre: "Budin de chips",
             descripcion: "Budin de chips, decorado con un glaseado de limon ",
             precio: 900,
             categoria: "panaderia"
         }, {
             id: 15,
-            imagen: "../img/cinnamonroll-min.png",
-            nombre: "cinnamon roll",
+            imagen: "img/cinnamonroll-min.png",
+            nombre: "Cinnamon roll",
             descripcion: "Clasicos rolls de canella y azucar negra , cubiertos con un glasse con nueces ",
             precio: 200,
             categoria: "panaderia"
+        }, {
+            id: 16,
+            imagen: "img/tiramisu.png",
+            nombre: "Tiramisu",
+            descripcion: "Clasica crema mascarpone con vainillas humedesidas en licor de cafe con cacao",
+            precio: 1200,
+            categoria: "tortas"
         }
+
 
     ]
 
@@ -151,9 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 contenedorProducto.classList.add("articleProductos")
                 contenedorProducto.innerHTML = `
                                                     <img src ="${producto.imagen}"/>
-                                                    <h3>${producto.nombre}</h3>
+                                                    <h5>${producto.nombre}</h5>
                                                     <p> ${producto.descripcion}</p>
-                                                    <b> $ ${producto.precio}</b>
+                                                    <p> $ ${producto.precio}</p>
                                                    `
 
                 const cardBoton = document.createElement("button");
@@ -184,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const cardDescripcion = document.createElement("p");
             cardDescripcion.textContent = info.descripcion;
             // precio
-            const cardPrecio = document.createElement("b");
+            const cardPrecio = document.createElement("p");
             cardPrecio.textContent = `$ ${info.precio}`;
             //boton
             const cardBoton = document.createElement("button");
