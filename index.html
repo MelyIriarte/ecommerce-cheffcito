@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width,  user-scalable=no initial-scale=1.0   ">
     <meta name="keywords" content=" Pasteleria Artesanal, Tortas, Budines, Box de desayuno, Alfajores, Scons, Cinnamon rolls">
     <meta name="description" content=" Todos nuestros productos en Stok, sumalos a tu carrito de productos.">
-    <link rel="stylesheet" href="../icofont/icofont.min.css">
-    <link rel="icon" type="image/ico" href="../img/cheffcito.ico">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="icon" type="image/ico" href="img/cheffcito.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>
         Productos
     </title>
@@ -30,7 +30,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-                <a class="navbar-brand" href="../index.html"><img src="../img/cheffcito.png" width="100" alt="logo de cheffcito"></a>
+                <a class="navbar-brand" href="../index.html"><img src="img/cheffcito.png" width="100" alt="logo de cheffcito"></a>
 
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -61,179 +61,35 @@
     <div>
         <main>
             <section class="sectionProtuctos">
-                <div> <input type="text" name="search" placeholder="Busca tus productos" class="src" autocomplete="off" control-id="ControlID-6">
+                <div> <input type="text" name="search" id="busqueda" placeholder="Busca tus productos" class="src" autocomplete="off" control-id="ControlID-6">
+
+                    <li class="submenu">
+                        <img src="img/cart.png" alt="">
+                        <div id="contenedorCarrito">
+                            <div id="carrito">
+
+
+                            </div>
+                            <p class="text-right">Total: <span id="total"></span> </p>
+                            <botton id="boton-vaciar" class="btn btn-danger">Vaciar</botton>
+
+                            <botton id="boton-comprar" class="btn btn-danger">Comprar</botton>
+
+                        </div>
+                    </li>
+
                 </div>
 
                 <div id="grid">
-                    <!--  <article class="articleProductos">
-                        <br> <img src="../img/rogel-min.png" alt="rogel">
-                        <h5>
-                            TORTA ROGEL<br> Masas fina de galeta muy crocante intercaladas con dulce de leche terminada con pico altos de meregue Italiano.
 
-                        </h5>
-                        <BR> $2500
-                        <select name="medidas">
-                       <option value="10cm"> 10cm </option>
-                       <option value="16cm"> 16cm </option>
-                       <option value="22cm"> 22cm </option>  
-                    </select>
-                        <i class="icofont-cart"></i>
-                    </article>
 
-                    <article class="articleProductos">
-                        <img src="../img/chescake-min.png" alt="Cheescake de frutos rojos"><br>
-                        <h5> NEWYORK CHEESCAKE <br> Base de galletitas trituradas con una crema de queso, terminada con una deliciosa jalea de frutos rojos.
-                        </h5>
-                        <BR> $2500
-                        <select name="medidas">
-                       <option value="10cm"> 10cm </option>
-                       <option value="16cm"> 16cm </option>
-                       <option value="22cm"> 22cm </option> 
-                    </select>
-                        <i class="icofont-cart"></i>
-
-                    </article>
-                    <article class="articleProductos">
-                        <img src="../img/pandulce.png" alt="Pan Dulce"><br>
-                        <h5>
-                            PAN DULCE<br> Pan dulces de chips de chocolate , de frutas secas o abrillantadas.
-
-                        </h5>
-                        <BR> $1500
-                        <select name="medidas">
-                            <option value="chips"> Chips de Chocolate </option>
-                            <option value="frutas secas"> Frutas Secas </option>
-                            <option value="frutas abrillantadas"> Frutas Abrillantadas</option>
-                        </select>
-                        <select name="medidas">
-                           <option value="1/4kg"> 1/4 kg </option>
-                           <option value="1/2kg"> 1/2 kg </option>
-                           <option value="1kg"> 1 kg </option> 
-                        </select>
-                        <i class="icofont-cart"></i>
-
-                    </article>
-                    <article class="articleProductos">
-                        <img src="../img/roscas-min.png" alt="Roscas de Pascuas"><br>
-                        <h5>
-                            ROSCA DE PASCUAS
-
-                        </h5>
-                        <BR> $1000
-                        <select name="medidas">
-                            <option value="Clasica"> Clasica </option>
-                            <option value="Trensada"> Trensada </option>  
-                        </select>
-                        <select name="medidas">
-                            <option value="10cm"> 10cm </option>
-                            <option value="16cm"> 16cm </option>
-                            <option value="22cm"> 22cm </option>
-                   </select>
-                        <i class="icofont-cart"></i>
-                    </article>
-                    <article class="articleProductos">
-                        <img src="../img/alfajorcito-min.png" alt="Alfajores de Maicena"> <br>
-                        <h5>
-                            ALFAJORES DE MAICENA <br> Masa quebrada, super suave rellena con dulce de leche, con coco al rededor.<br>
-                        </h5>
-                        <BR> $400 x 6un
-                        <select name="medidas">
-                             <option value="6un"> 6un </option>
-                             <option value="12un"> 12un </option>
-                             <option value="24un"> 24un </option>
-                             <button class="carrito" type="sumit" value="Agregar"> Agregar <img src="../img/carrito.png" alt="añadir al carrito" width="15px"> </button><br>
-                   
-                            </select>
-                        <i class="icofont-cart"></i>
-                    </article>
-
-                    <article class="articleProductos">
-                        <img src="../img/budin-min.png" alt="Carrotcake"><br>
-                        <h5> CARROTCAKE <br> Budin de zanahoria con glaseado y decoracion de zanahoria en pasta ballina.<br>
-                        </h5>
-                        <BR> $500 un
-                        <select name="medidas">
-                           <option value="Chico"> Chico </option>
-                           <option value="Grande"> Grande </option>
-                    </select>
-                        <i class="icofont-cart"></i>
-                    </article>
-                    <article class="articleProductos">
-                        <img src="../img/cinnamonroll-min.png" alt="Cinnamon rolls"><br>
-                        <h5>
-                            CINNAMON ROLLS<br>Rolls de canela hechos con una exquisita masa de papa, con un glaseado con nuez.
-
-                        </h5>
-                        <BR> $200 un
-                        <select name="medidas">
-                          <option value="1un"> 1un </option>
-                          <option value="3un"> 3un </option>
-                         <option value="6un"> 6un </option>
-                        </select>
-                        <i class="icofont-cart"></i>
-                    </article>
-                    <article class="articleProductos">
-                        <img src="../img/budines.png" alt="Budines">
-                        <h5>
-                            BUDINES
-
-                        </h5>
-                        <BR> $500un
-                        <select name="medidas">
-                            <option value="Chico"> Chico </option>
-                            <option value="Grande"> Grande </option>  
-                        </select>
-                        <i class="icofont-cart"></i>
-                    </article>
-                    <article class="articleProductos">
-                        <img src="../img/pug-min.png" alt="Tortas Personalizadas, Perro Pug ">
-                        <h5>
-                            TORTAS PERSONALIZADAS <br> La torta que vos queres, nosotros te la hacemos.
-
-                        </h5>
-                        <BR> Consultar Precio
-                        <select name="medidas">
-                            <option value="10cm"> 10cm </option>
-                            <option value="16cm"> 16cm </option>
-                         <option value="22cm"> 22cm </option>
-                        </select>
-                        <i class="icofont-cart"></i>
-                    </article>
-                    <article class="articleProductos">
-                        <img src="../img/scon-min.png" alt="Scones">
-                        <h5>
-                            SCONES
-                        </h5>
-                        <BR> $400 x 6un
-                        <select name="medidas">
-                            <option value="6un"> 6un </option>
-                             <option value="12un"> 12un </option>
-                             <option value="24un"> 24un </option>
-                             </select>
-                        <i class="icofont-cart"></i>
-                    </article>
-                    <article class="articleProductos">
-                        <br> <img src="../img/brownie-min.png" alt="Torta Brownie">
-                        <h5>
-                            TORTA BROWNIE <br> base de nuestro brownie de chocolate con una capa de dulce de leche y copos de merengue Italiano.
-                        </h5>
-                        <BR> $2500
-                        <select name="medidas">
-                          <option value="10cm"> 10cm </option>
-                          <option value="16cm"> 16cm </option>
-                         <option value="22cm"> 22cm </option>
-                        </select>
-                        <i class="icofont-cart"></i>
-
-                    </article>
- -->
                 </div>
 
 
 
             </section>
             <div class="volver">
-                <a href="productos.html"><img src="../img/flecha.svg" alt="Volve a arriba"></a>
+                <a href="productos.html"><img src="img/flecha.svg" alt="Volve a arriba"></a>
 
             </div>
 
@@ -287,10 +143,11 @@
         </div>
 
     </footer>
-
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script src="../js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
