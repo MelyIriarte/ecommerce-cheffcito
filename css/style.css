@@ -299,7 +299,7 @@ ul {
     .boton {
         font-size: 28px;
     }
-    /* PRODUCTOS*/
+    /*PRODUCTOS*/
     #grid {
         grid-template-columns: repeat(4, 1fr);
     }

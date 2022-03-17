@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     //VARIABLES
     let baseDeDatos = [];
-
-    let cantidadComprada;
-    let total = 0;
     let carrito = [];
     const divisa = "$";
     const DOMgrid = document.getElementById("grid");
@@ -12,10 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const DOMbotonVaciar = document.querySelector("#boton-vaciar");
     const DOMbotonComprar = document.querySelector("#boton-comprar");
     const miLocalStorage = window.localStorage;
-    let repeticion = 0;
-    let categoriaTortas = document.querySelector(".categoriaTortas");
-    let categoriaPanaderia = document.querySelector(".categoriaPanaderia");
-    let categoriaProductosFestivos = document.querySelector(".categoriaProductosFestivos");
 
     //PRODUCTOS
     const listadoProductos = [{
@@ -138,7 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
             precio: 1200,
             categoria: "tortas"
         }
-
 
     ]
 
@@ -304,8 +296,6 @@ document.addEventListener('DOMContentLoaded', () => {
         carrito = [];
         renderizarCarrito();
         localStorage.clear();
-
-
 
         Swal.fire({
             position: 'top-end',
