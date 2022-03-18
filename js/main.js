@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const cardBoton = document.createElement("button");
                 cardBoton.classList.add("boton");
-                cardBoton.textContent = "agregar";
+                cardBoton.textContent = "Agregar";
                 cardBoton.setAttribute("marcador", producto.id);
                 cardBoton.addEventListener("click", añadirProductoAlCarrito);
                 contenedorProducto.appendChild(cardBoton);
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
             //boton
             const cardBoton = document.createElement("button");
             cardBoton.classList.add("boton");
-            cardBoton.textContent = "agregar";
+            cardBoton.textContent = "Agregar";
             cardBoton.setAttribute("marcador", info.id);
             cardBoton.addEventListener("click", añadirProductoAlCarrito);
             // armado de card
@@ -208,6 +208,23 @@ document.addEventListener('DOMContentLoaded', () => {
         carrito.push(e.target.getAttribute("marcador"));
         renderizarCarrito();
         guardarCarritoEnLocalStorage();
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "bottom-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+            icon: 'success',
+            title: 'Su producto se añadio al carrito'
+        })
+
     }
     // muestra los productos guardados en el carrito
     function renderizarCarrito() { //vacia todo el html
@@ -300,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
         Swal.fire({
             position: 'top-end',
             icon: 'success',
-            title: 'Compra realizada',
+            title: 'Compra realizada con exito.',
             showConfirmButton: false,
             timer: 1500
         })
