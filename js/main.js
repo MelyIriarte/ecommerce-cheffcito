@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const divisa = "$";
     const miLocalStorage = window.localStorage;
 
-    //PRODUCTOS
-
     let listadoProductos = [];
     fetch("data.json")
         .then((resp) => resp.json())
@@ -19,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const input1 = document.querySelector("#busqueda");
     input1.value = "";
     input1.addEventListener('keyup', buscar);
-
 
     /*   import { buscar } from `./funciones`; */
     function buscar() {
@@ -84,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
             card.appendChild(cardPrecio);
             card.appendChild(cardBoton);
             domGrid.appendChild(card);
-
         });
     }
 
