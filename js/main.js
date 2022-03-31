@@ -18,10 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
     input1.value = "";
     input1.addEventListener('keyup', buscar);
 
-    /*   import { buscar } from `./funciones`; */
+
     function buscar() {
         const texto = input1.value.toLowerCase();
-
         contenedorBusqueda = document.querySelector("#grid");
         contenedorBusqueda.innerHTML = '';
 
