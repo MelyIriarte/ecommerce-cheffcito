@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    //VARIABLES
 
+    //VARIABLES
     let carrito = [];
     const divisa = "$";
     const miLocalStorage = window.localStorage;
